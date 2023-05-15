@@ -1,7 +1,6 @@
-package com.mysite.sbb;
-
+package com.mysite.sbb.answer;
+import com.mysite.sbb.question.question;
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 

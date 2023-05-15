@@ -1,6 +1,7 @@
-package com.mysite.sbb;
+package com.mysite.sbb.question;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.mysite.sbb.answer.answer;
 import jakarta.persistence.*;
 import lombok.*;
 

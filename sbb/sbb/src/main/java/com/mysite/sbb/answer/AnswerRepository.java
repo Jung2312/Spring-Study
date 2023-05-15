@@ -1,6 +1,6 @@
-package com.mysite.sbb;
+package com.mysite.sbb.answer;
 
-import jakarta.transaction.Transactional;
+import com.mysite.sbb.answer.answer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AnswerRepository extends JpaRepository<answer, Integer> {
