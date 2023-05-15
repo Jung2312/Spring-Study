@@ -1,0 +1,25 @@
+<!--
+1. 분기문 속성
+th:if="${question != null}"
+
+2. 반복문 속성
+th:each="question : ${questionList}"
+th:each="question, loop : ${questionList}"
+loop.index - 반복 순서, 0부터 1씩 증가
+loop.count - 반복 순서, 1부터 1씩 증가
+loop.size - 반복 객체의 요소 갯수 (예: questionList의 요소 갯수)
+loop.first - 루프의 첫번째 순서인 경우 true
+loop.last - 루프의 마지막 순서인 경우 true
+loop.odd - 루프의 홀수번째 순서인 경우 true
+loop.even - 루프의 짝수번째 순서인 경우 true
+loop.current - 현재 대입된 객체 (예: 위의 경우 question과 동일)
+
+3. 텍스트 속성
+th:text="${question.subject}"
+<tr th:each="question : ${questionList}">
+ <td>[[${question.subject}]]</td>
+ <td>[[${question.createDate}]]</td>
+</tr>
+
+타임리프는 문자열을 연결(concatenation)할 때 | 문자를 사용한다.
+-->
